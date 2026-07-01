@@ -142,7 +142,7 @@ export default {
     /* =========================
        ALLOWED ORIGIN & CORS
     ========================= */
-    const ALLOWED_ORIGIN = "https://ai-chat-jyotirmay.pages.dev";
+    const ALLOWED_ORIGIN = "https://YOUR.pages.dev";
     const corsHeaders = {
       "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
@@ -463,7 +463,7 @@ export default {
       let assistantReply = "";
       try {
         const result = await env.AI.run(
-          "@cf/moonshotai/kimi-k2.7-code",
+          "CLOUDFLARE AI MODEL",
           { messages }
         );
 
@@ -476,7 +476,7 @@ export default {
         // Fallback model if Moonshot AI is down or slow
         try {
           const fallbackResult = await env.AI.run(
-            "@cf/meta/llama-3.1-8b-instruct",
+            "CLOUDFLARE AI MODEL",
             { messages }
           );
           assistantReply =
