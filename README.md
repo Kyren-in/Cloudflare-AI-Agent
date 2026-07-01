@@ -51,9 +51,8 @@ Lucy AI is a premium, high-fidelity chat companion application built on serverle
 ## 📁 Project Structure
 
 ```bash
-├── html/
-│   ├── index.html        # Interactive login and registration portal
-│   └── chat.html         # Lock-to-screen responsive chat interface
+├── index.html        # Interactive login and registration portal
+├── chat.html         # Lock-to-screen responsive chat interface
 ├── worker.js             # Cloudflare worker backend router and API
 └── README.md             # Project documentation
 ```
